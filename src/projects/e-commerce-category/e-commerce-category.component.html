@@ -1,0 +1,31 @@
+<div class="container e-commerce">
+    <div class="row gx-0 buttons mt-4">
+        <div class="col-3">
+            <a routerLink="/timer-app">Click Here to Navigate to Timer App</a>
+        </div>
+        <div class="offset-lg-4 col">
+            <img style="float:right" (click)="onClickLayout('grid')" src="../../assets/images/grid icon.png" alt="">
+        </div>
+        <div class="col">
+            <img (click)="onClickLayout('list')" src="../../assets/images/list icon.png" alt="">
+        </div>
+        <div class="col">
+            <div class="dropdown">
+                <button class="dropbtn">Price: {{priceSorting}}</button>
+                <div class="dropdown-content">
+                  <a role="button" (click)="onSelectPrice('High-Low')">High-Low</a>
+                  <a role="button" (click)="onSelectPrice('Low-High')">Low-High</a>
+                  <a role="button" (click)="onSelectPrice('Popularity')">Popularity</a>
+                </div>
+              </div>
+        </div>
+    </div>
+
+    <div class="product-row mt-4" *ngFor="let row of rowArray;let i =index">
+        <div class="row gx-0">
+            <div class="col" *ngFor="let column of columnArray;let j =index">
+                <div class="product">Image</div>
+            </div>
+        </div>
+    </div>
+</div>

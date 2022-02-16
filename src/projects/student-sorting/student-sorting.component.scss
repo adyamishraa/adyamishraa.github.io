@@ -1,0 +1,22 @@
+.container{
+    table{
+        border: 1px solid black;
+        thead{
+            th{
+                text-align: center;
+                border: 1px solid black;
+                width: 10%;
+                cursor: pointer;
+            }
+        }
+        tbody{
+            tr{
+                border: 1px solid black;
+                td{
+                    text-align: center;
+                    border: 1px solid black;
+                }
+            }
+        }
+    }
+}

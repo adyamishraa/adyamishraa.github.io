@@ -1,0 +1,17 @@
+<div class="row text-center">
+    <div class="col">
+      <h2>{{timerLog.length}}</h2>
+    </div>
+    <div class="col">
+      <h2 *ngIf="!start">{{timerLog.length}}</h2>
+      <h2 *ngIf="start">{{timerLog.length-1}}</h2>
+    </div>
+  </div>
+  <div class="row text-center">
+    <div class="col">
+      <h2>Started</h2>
+    </div>
+    <div class="col">
+      <h2>Paused</h2>
+    </div>
+  </div>

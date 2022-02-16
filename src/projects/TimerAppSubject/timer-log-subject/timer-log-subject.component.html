@@ -1,0 +1,4 @@
+<div *ngFor="let log of timerLog">
+    <h5>Started at {{log.started}}</h5>
+    <h5 *ngIf="log.paused">Paused at {{log.paused}}</h5>
+  </div>

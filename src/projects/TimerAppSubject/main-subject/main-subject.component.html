@@ -1,0 +1,23 @@
+
+<div class="container my-4">
+    <a routerLink="/student">Click Here to Navigate to Timer App using Student Sorting Table</a>
+
+    <div class="row mt-4">
+        <div class="col-4 text-center border border-dark">
+            <h4>Count Down Timer</h4>
+            <h3>{{countDown}}</h3>
+        </div>
+        <div class="col-7 offset-1 border border-dark">
+            <app-state-maintenance-subject></app-state-maintenance-subject>
+        </div>
+    </div>
+
+    <div class="row mt-4">
+        <div class="col-4">
+            <app-timer-log-subject></app-timer-log-subject>
+        </div>
+        <div class="col-7 offset-1">
+            <app-start-pause-count-subject></app-start-pause-count-subject>
+        </div>
+    </div>
+</div>

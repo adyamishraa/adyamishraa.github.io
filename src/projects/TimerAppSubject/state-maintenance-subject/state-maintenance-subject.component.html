@@ -1,0 +1,21 @@
+<div class="row">
+    <div class="col-3">
+        <h6>Enter Timer Limit</h6>
+    </div>
+    <div class="col-9">
+        <input type="number" [(ngModel)]="countDown" class="w-50" id="timerLimit" name="timerLimit" min="1" max="1000">
+    </div>
+</div>
+
+<div class="row text-center mt-2">
+    <div class="col-2 offset-2">
+        <button (click)="onChangeTimerState('startPause')">Start/Pause</button>
+    </div>
+    <div class="col-2">
+        <button (click)="onChangeTimerState('reset')">Reset</button>
+    </div>
+</div>
+
+<div class="row mt-2" *ngFor="let log of statusChangeLog">
+    <h5 *ngIf="log.pausedAt">Paused at {{log.pausedAt}}</h5>
+</div>

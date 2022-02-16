@@ -1,0 +1,27 @@
+<div class="border-div">
+    <div class="border-div">
+        <div class="border-div">
+            <div class="border-div">
+                <div class="border-div">
+                    <div class="border-div">
+                        <div class="border-div">
+                          <div class="row">
+                              <div class="col-1 m-auto">
+                                  <span (click)="onClickControl('previous')" role="button">Previous</span>
+                              </div>
+                              <div class="col-10 text-center">
+                                  <img [src]="imageSource[imgSelected]" alt="Image Banner">
+                              </div>
+                              <div class="col-1 m-auto">
+                                <span (click)="onClickControl('next')" role="button">Next</span>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<a routerLink="/e-commerce">Click Here to Navigate to E-Commerce Page</a>
